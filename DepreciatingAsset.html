@@ -1,0 +1,63 @@
+<!-- BY THOMAS SCANLAN CIT285 
+	It is important to note that my code allows for negative depreciation 
+	for units of production. I googled if such a thing was possible 
+	and found out it meant that an asset would gain value. 
+	So for units of production you can enter a negative value for any years units, 
+	however the total amount of units must still be equal to the anticipated amount.
+-->
+<html>
+    <head>
+        <title>Depreciating Assets</title>
+        <link href="Style.css" rel="stylesheet" type="text/css">
+</head>
+<body bgcolor="BLACK">
+    <br>
+    <table width="60%" align="CENTER" cellpadding="15" border="15" bgcolor="CCFFFF">
+        <tr>
+            <td>
+        <center>
+            <h1> Depreciating Assets by Thomas Scanlan </h1>
+        </center>
+    </td>
+</tr>
+</table> 
+    <form action="depreciation.jsp" METHOD="POST">
+<table width="60%" align="CENTER" cellpadding="15" border="5" bgcolor="9999FF">
+    <tr>
+        <td align="CENTER"> <input id="r1" type= "radio" name="group1" class="radio4" value="Straight Line"/>
+            <label for="r1"><h1>Straight Line</h1></label></TD>
+        <td align="CENTER"> <input id="r2" type="radio" name="group1" class="radio4" value="Double Declining Balance"/>
+            <label for="r2"><h1>Double Declining Balance</h1></label></TD>
+        <td align="CENTER"> <input id="r3" type="radio" name="group1" class="radio4" value="Units of Production"/>
+            <label for="r3"><h1>Units of Production</h1></label></TD>
+        <td align="CENTER"> <input id ="r4" type="radio" name="group1" class="radio4" value="Sum of Years"/>
+            <label for="r4"><h1>Sum of Years</h1></label></TD>    
+	</tr>
+</table>
+<table width="60%" align="CENTER" cellpadding="15" border="5" bgcolor="WHITE">
+    <tr>
+        <td colspan="5" align="CENTER" bgcolor="6633FF">
+            <h2><font color="WHITE">
+             Please only numeric data! 
+            </font></h2>
+            <hr width="80%" color="WHITE">
+	<h2> 
+		<font color="WHITE">
+		COST: <input type = "TEXT" name="costBox" value="" required="REQUIRED">
+		<br>
+		<br>
+		SCRAP: <input type = "TEXT" name="scrapBox" value="" required="REQUIRED">
+		<br>
+		<br>
+		USEFUL LIFE: <input type = "TEXT" name="ulBox" value="" required="REQUIRED">
+		</font>
+		<br>
+		<br>
+		<input type="submit" class="btn-style" value="Submit">
+	</h2>
+		</td>
+	</tr>
+</table>
+	</form>        
+	</body>
+</html>
